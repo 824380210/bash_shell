@@ -38,8 +38,22 @@ problem when enter directory /var/log/confluent/console
 
 # 3: 与操作符的应用示例 （与操作符是: && ） 
 ```
+[root@test bash_shell]# bash ~/and_operator.sh
+ clear the log message ok
+[root@test bash_shell]# cat /root/and_operator.sh
+#!/bin/bash
+cat /dev/null > /var/log/message && {
+        echo -e " clear the log message ok"
+        exit 0
+        }
+echo -e "LOG clear failed "
+exit 1
+[root@test bash_shell]#
+[root@test bash_shell]# bash ~/and_operator.sh
+ clear the log message ok
 
 ```
+## 上面的例子中，其实重点在于&& 后面是对着一个语句块，如果不成功，会怎样，成功又是怎样
 
 # : 
 ```
