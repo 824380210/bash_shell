@@ -41,4 +41,13 @@ To git@github.com:824380210/bash_shell.git
 Branch master set up to track remote branch master from bash_shell.
 
 ```
-
+## 使用同一个命令来查不同仓库的远程配置
+```
+[root@test bash_shell]# git remote -v
+bash_shell      git@github.com:824380210/bash_shell.git (fetch)
+bash_shell      git@github.com:824380210/bash_shell.git (push)
+[root@test bash_shell]# cd ../xcat_book/
+[root@test xcat_book]# git remote -v
+origin  git@github.com:824380210/xcat_book.git (fetch)
+origin  git@github.com:824380210/xcat_book.git (push)
+``` 
