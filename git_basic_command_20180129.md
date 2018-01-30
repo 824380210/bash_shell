@@ -10,7 +10,7 @@
 ```
 # 4： 关联远程仓库
 ```
-[root@test bash_shell]# git remote add bash_shell https://github.com/824380210/bash_shell
+[root@test bash_shell]# git remote add bash_shell https://github.com/824380210/bash_shell.git
 ```
 # 5: 给本地仓库添加文件
 ```
